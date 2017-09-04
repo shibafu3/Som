@@ -118,8 +118,8 @@ int main(){
 
 	int x = 30;
 	int y = 30;
-	int lrange = 1;
-	double lrate = 0.1;
+	int lrange = 6;
+	double lrate = 0.01;
 
 	SomLearn som(x, y);
 	Mat src(Size(som.map.size(), som.map[0].size()), CV_8UC3, Scalar::all(0));
@@ -144,8 +144,8 @@ int main(){
 
 
 
-	resize(src, src, Size(), 25, 25);
-	resize(dst, dst, Size(), 25, 25);
+	//resize(src, src, Size(), 25, 25);
+	//resize(dst, dst, Size(), 25, 25);
 	imshow("src", src);
 	imshow("dst", dst);
 
